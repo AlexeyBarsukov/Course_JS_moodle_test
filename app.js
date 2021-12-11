@@ -1,3 +1,18 @@
-console.log('hello test')
-console.log('I worked from home')
-console.log('this is was created in home branch')
+const question = +prompt('Сколько фильмов ты посмотрел?', '');
+
+
+const a = prompt('Один из последних просмотренных фильмов?', ''),
+      b = prompt('На сколько оцените его?', '')
+
+
+const personalMovieDB = {
+    count: question,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false,
+}
+
+personalMovieDB.movies[a] = b
+
+console.log(personalMovieDB)
